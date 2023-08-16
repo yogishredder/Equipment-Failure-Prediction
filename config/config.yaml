@@ -1,0 +1,55 @@
+# Path related
+dataset: 
+  data_directory: data/raw/
+  file_name: 'predictive_maintenance.csv'
+  drop_columns: ['UDI', 'Product ID', 'Failure Type']
+  label: Target
+  predictors: ['Type', 'Air temperature [K]','Process temperature [K]', 
+        'Rotational speed [rpm]', 'Torque [Nm]', 'Tool wear [min]']
+  float_columns: ['Air temperature [K]','Process temperature [K]',
+        'Torque [Nm]']
+  int_columns: ['Rotational speed [rpm]', 'Tool wear [min]', 'Target']
+  category_columns: ['Type']
+  test_size: 0.2  
+
+#train-test data directory
+train_test:
+  directory: data/processed/
+  clean_data: clean_data.pkl
+  X_train: X_train.pkl
+  y_train: y_train.pkl
+  X_test: X_test.pkl
+  y_test: y_test.pkl
+  X_train_feng: X_train_feng.pkl
+  y_train_feng: y_train_feng.pkl
+  X_test_feng: X_test_feng.pkl
+  y_test_feng: y_test_feng.pkl
+
+# data_defense
+data_defense:
+  type: 
+    value: ['L', 'M', 'H']
+  range_air_temperature:
+    min_value: 295.3
+    max_value: 304.5
+  range_process_temperature:
+    min_value: 305.7
+    max_value: 313.8
+  range_rotational_speed:
+    min_value: 1168
+    max_value: 2886
+  range_torque:
+    min_value: 3.8
+    max_value: 76.6
+  range_tool_wear:
+    min_value: 0
+    max_value: 253
+  target:
+    value: [0, 1]
+
+#Best-Performing model:
+best_model:
+  parameter:
+    max_depth: 5
+  model_path: models/
+  model_name: decision_tree.pkl
