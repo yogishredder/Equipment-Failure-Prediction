@@ -19,8 +19,7 @@
 
     5. Documentation of Workflow (Streamlit) 
 
-![Documentation of workflow_API)](https://github.com/yogishredder/Equipment-Failure-Prediction/blob/main/config/assets/Documentation_Workflow_Streamlit.png).
-
+![Documentation of workflow_API)](https://github.com/yogishredder/Equipment-Failure-Prediction/blob/main/config/assets/Documentation_Workflow_Streamlit.png)
 
 ## Business Problem & Objective
 
