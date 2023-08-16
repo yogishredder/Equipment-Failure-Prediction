@@ -126,8 +126,3 @@ Develop a model with more data and a more advanced model (deep learning) that ca
 ## Authors
 
 - [@yogishredder](https://github.com/yogishredder)
-
-#### Question 2
-
-Answer 2
-
