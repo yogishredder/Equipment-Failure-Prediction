@@ -123,6 +123,3 @@ Develop a model with more data and a more advanced model (deep learning) that ca
     2. UC Irvine Repository: https://archive.ics.uci.edu/datasets
 
     3. Stanford Project Report: http://cs230.stanford.edu/past-projects/ 
-## Authors
-
-- [@yogishredder](https://github.com/yogishredder)
